@@ -39,6 +39,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+keymap("n", "co", ":set colorcolumn=79<CR>", opts)
+
 -- Insert --
 -- Press kj or jk fast to exit insert mode 
 keymap("i", "kj", "<ESC>", opts)
@@ -51,8 +53,8 @@ keymap("i", "<C-j>", "<ESC>ja", opts)
 
 -- Visual --
 -- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
+keymap("v", "H", "<gv", opts)
+keymap("v", "L", ">gv", opts)
 
 -- Press kj fast to exit visual mode 
 keymap("v", "kj", "<ESC>", opts)

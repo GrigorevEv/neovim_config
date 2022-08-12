@@ -91,7 +91,9 @@ return packer.startup(function(use)
 	use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
 
   -- Mirror
-  use({ "zenbro/mirror.vim" , commit = "fe732ee567fcd2b25191a80b7ac2a880a74ff5c6" })
+  use({ "zenbro/mirror.vim", commit = "fe732ee567fcd2b25191a80b7ac2a880a74ff5c6" })
+
+  -- use({ "xiyaowong/virt-column.nvim" })
 
 
 	-- Automatically set up your configuration after cloning packer.nvim
