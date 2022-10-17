@@ -46,8 +46,12 @@ keymap("n", "0", ":w|MirrorPush en0<CR>", opts)
 keymap("n", "1", ":w|MirrorPush en1<CR>", opts)
 
 -- Move to start and end of line
-keymap("n", "<C-i>", "^", opts)
-keymap("n", "<C-a>", "$", opts)
+keymap("n", "<C-a>", "^", opts)
+keymap("n", "<C-e>", "$", opts)
+
+-- Move to start and previous lication
+keymap("n", "<C-i>", "<C-o>", opts)
+keymap("n", "<C-o>", "<C-i>", opts)
 
 -- Run file in python interpreter
 keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
@@ -68,8 +72,9 @@ keymap("i", "<C-k>", "<ESC>ka", opts)
 keymap("i", "<C-j>", "<ESC>ja", opts)
 
 -- Move to start and end of line
-keymap("i", "<C-a>", "<ESC>A", opts)
-keymap("i", "<C-i>", "<ESC>I", opts)
+keymap("i", "<C-e>", "<ESC>A", opts)
+keymap("i", "<C-a>", "<ESC>I", opts)
+
 
 -- Run file in python interpreter
 keymap("i", "<C-p>", "<ESC>:w|!python3 %<CR>", opts)
@@ -89,8 +94,8 @@ keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
 -- Move to start and end of line
-keymap("v", "<C-i>", "^", opts)
-keymap("v", "<C-a>", "$", opts)
+keymap("v", "<C-a>", "^", opts)
+keymap("v", "<C-e>", "$", opts)
 
 -- Run file in python interpreter
 keymap("v", "<C-p>", "<C-[>:w|!python3 %<CR>", opts)
