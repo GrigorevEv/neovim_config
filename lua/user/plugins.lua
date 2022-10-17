@@ -61,8 +61,7 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	use("lunarvim/darkplus.nvim")
-  use("morhetz/gruvbox")
-  use("joshdick/onedark.vim")
+  use("luisiacc/gruvbox-baby")
 
 	-- cmp plugins
 	use({ "hrsh7th/nvim-cmp", commit = "df6734aa018d6feb4d76ba6bda94b1aeac2b378a" }) -- The completion plugin
@@ -93,7 +92,12 @@ return packer.startup(function(use)
   -- Mirror
   use({ "zenbro/mirror.vim", commit = "fe732ee567fcd2b25191a80b7ac2a880a74ff5c6" })
 
-  -- use({ "xiyaowong/virt-column.nvim" })
+  -- Smooth scrolling
+  use({ "karb94/neoscroll.nvim", commit = "54c5c419f6ee2b35557b3a6a7d631724234ba97a" })
+
+  -- Colorcolumn
+  use({ "lukas-reineke/virt-column.nvim", commit = "29db24c5e94243df1f34f47bbcb4e7803204cae4" })
+
 
 
 	-- Automatically set up your configuration after cloning packer.nvim

@@ -41,15 +41,39 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 keymap("n", "co", ":set colorcolumn=79<CR>", opts)
 
+-- Mirror deploy
+keymap("n", "0", ":w|MirrorPush en0<CR>", opts)
+keymap("n", "1", ":w|MirrorPush en1<CR>", opts)
+
+-- Move to start and end of line
+keymap("n", "<C-i>", "^", opts)
+keymap("n", "<C-a>", "$", opts)
+
+-- Run file in python interpreter
+keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
+
+-- Open learning python file
+keymap("n", "<Leader>o", ":e ~/learn.py<CR>", opts)
+
+
 -- Insert --
 -- Press kj or jk fast to exit insert mode 
 keymap("i", "kj", "<ESC>", opts)
 keymap("i", "jk", "<ESC>", opts)
+
 -- Navigation in insert mode
 keymap("i", "<C-l>", "<ESC>la", opts)
 keymap("i", "<C-h>", "<ESC>i", opts)
 keymap("i", "<C-k>", "<ESC>ka", opts)
 keymap("i", "<C-j>", "<ESC>ja", opts)
+
+-- Move to start and end of line
+keymap("i", "<C-a>", "<ESC>A", opts)
+keymap("i", "<C-i>", "<ESC>I", opts)
+
+-- Run file in python interpreter
+keymap("i", "<C-p>", "<ESC>:w|!python3 %<CR>", opts)
+
 
 -- Visual --
 -- Stay in indent mode
@@ -64,16 +88,16 @@ keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
+-- Move to start and end of line
+keymap("v", "<C-i>", "^", opts)
+keymap("v", "<C-a>", "$", opts)
+
+-- Run file in python interpreter
+keymap("v", "<C-p>", "<C-[>:w|!python3 %<CR>", opts)
+
 -- Visual Block --
 -- Move text up and down
 keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
-
--- Terminal --
--- Better terminal navigation
--- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
--- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
--- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
--- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)

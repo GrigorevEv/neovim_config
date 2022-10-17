@@ -12,6 +12,7 @@ null_ls.setup({
 	debug = false,
 	sources = {
     diagnostics.flake8,
+    diagnostics.pylint,
     formatting.autopep8
 	},
 })
