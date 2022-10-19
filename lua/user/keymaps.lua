@@ -47,9 +47,9 @@ keymap("n", "1", ":w|MirrorPush en1<CR>", opts)
 
 -- Move to start and end of line
 keymap("n", "<C-a>", "^", opts)
-keymap("n", "<C-e>", "$", opts)
+keymap("n", "<C-n>", "$", opts)
 
--- Move to start and previous lication
+-- Move to start and previous location
 keymap("n", "<C-i>", "<C-o>", opts)
 keymap("n", "<C-o>", "<C-i>", opts)
 
@@ -72,8 +72,8 @@ keymap("i", "<C-k>", "<ESC>ka", opts)
 keymap("i", "<C-j>", "<ESC>ja", opts)
 
 -- Move to start and end of line
-keymap("i", "<C-e>", "<ESC>A", opts)
 keymap("i", "<C-a>", "<ESC>I", opts)
+keymap("i", "<C-n>", "<ESC>A", opts)
 
 
 -- Run file in python interpreter
@@ -95,7 +95,7 @@ keymap("v", "p", '"_dP', opts)
 
 -- Move to start and end of line
 keymap("v", "<C-a>", "^", opts)
-keymap("v", "<C-e>", "$", opts)
+keymap("v", "<C-n>", "$", opts)
 
 -- Run file in python interpreter
 keymap("v", "<C-p>", "<C-[>:w|!python3 %<CR>", opts)
