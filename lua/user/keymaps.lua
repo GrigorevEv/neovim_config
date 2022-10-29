@@ -56,8 +56,9 @@ keymap("n", "<C-o>", "<C-i>", opts)
 -- Run file in python interpreter
 keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
 
--- Open learning python file
-keymap("n", "<Leader>o", ":e ~/learn.py<CR>", opts)
+-- Open learning python files
+keymap("n", "<Leader>o", ":e ~/learn_1.py<CR>", opts)
+keymap("n", "<Leader>O", ":e ~/learn_2.py<CR>", opts)
 
 
 -- Insert --
