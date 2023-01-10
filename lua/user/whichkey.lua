@@ -161,6 +161,8 @@ local mappings = {
     k = { "<cmd>MirrorPush en1<cr>", "Push to engine1"},
   },
 
+  v = { "<cmd>TagbarToggle<cr>", "Tagbar" },
+
 }
 
 which_key.setup(setup)

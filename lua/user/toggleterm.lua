@@ -24,6 +24,9 @@ toggleterm.setup({
 			background = "Normal",
 		},
 	},
+    -- winbar = {
+    --     enabled = false,
+    -- }
 })
 
 function _G.set_terminal_keymaps()

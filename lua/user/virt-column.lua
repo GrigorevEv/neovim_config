@@ -4,3 +4,6 @@ if not status_ok then
 end
 
 virt_column.setup()
+
+vim.cmd('set colorcolumn=79')
+vim.cmd('highlight VirtColumn guifg=#7a7876')

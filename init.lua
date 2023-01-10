@@ -24,7 +24,4 @@ require("user.null-ls")
 require("user.virt-column")
 require("user.neoscroll")
 require("user.nvim-comment")
-
--- vim.cmd('set scroll=12')
-vim.cmd('set colorcolumn=79')
-vim.cmd('highlight VirtColumn guifg=#7a7876')
+require("user.tagbar")
