@@ -156,12 +156,23 @@ local mappings = {
 
   d = {
     name = 'Deploy',
-    c = { "<cmd>MirrorConfig<cr>", "Config" },
+    c = { "<cmd>split ~/nvim/python/rsync_deploy/rs_conf.json | resize -15<cr>", "ConfigRs" },
+    y = { "<cmd>autocmd BufWritePost * silent execute '!rs'<cr>", "SyncOnSaveOn"},
+    n = { "<cmd>autocmd! BufWritePost *<cr>", "SyncOnSaveOff"},
+    d = { "<cmd>autocmd InsertLeave,TextChanged * if &readonly == 0 && filereadable(bufname('%')) | silent update | silent execute '!rs &' | endif<cr>", "SyncAutoSaveOn" },
+    f = { "<cmd>autocmd! InsertLeave,TextChanged *<cr>", "SyncAutoSaveOff"},
+    C = { "<cmd>MirrorConfig<cr>", "ConfigMirror" },
     j = { "<cmd>MirrorPush en0<cr>", "Push to engine0"},
     k = { "<cmd>MirrorPush en1<cr>", "Push to engine1"},
   },
 
   v = { "<cmd>TagbarToggle<cr>", "Tagbar" },
+
+  m = {
+    name= 'General',
+    y = { "<cmd>autocmd InsertLeave,TextChanged * if &readonly == 0 && filereadable(bufname('%')) | silent update | endif<cr>", "AutoSaveOn" },
+    n = { "<cmd>autocmd! InsertLeave,TextChanged *", "AutoSaveOff"}
+    },
 
 }
 
