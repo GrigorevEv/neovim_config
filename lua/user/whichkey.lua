@@ -138,10 +138,9 @@ local mappings = {
   },
 
   l = {
-    name = "LSP",
+    name = "Formating",
     f = { "<cmd>lua vim.lsp.buf.format{async=true}<cr>", "Format" },
-    i = { "<cmd>LspInfo<cr>", "Info" },
-    I = { "<cmd>LspInstallInfo<cr>", "Installer Info" },
+    l = { "<cmd>w | silent execute '!isort --multi-line=3 --trailing-comma %' <cr>", "Sort imports" },
   },
 
   t = {

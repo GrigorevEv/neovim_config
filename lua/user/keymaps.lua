@@ -55,10 +55,11 @@ keymap("n", "<C-o>", "<C-i>", opts)
 
 -- Run file in python interpreter
 keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
+keymap("n", "<C-o>", ":w|!poetry run python %<CR>", opts)
 
 -- Open learning python files
-keymap("n", "<Leader>o", ":e ~/learn_1.py<CR>", opts)
-keymap("n", "<Leader>O", ":e ~/learn_2.py<CR>", opts)
+keymap("n", "<Leader>o", ":e ~/code/personal/sandbox/sb1.py<CR>", opts)
+keymap("n", "<Leader>O", ":e ~/code/personal/sandbox/sb2.py<CR>", opts)
 
 
 -- Insert --
@@ -79,6 +80,7 @@ keymap("i", "<C-n>", "<ESC>A", opts)
 
 -- Run file in python interpreter
 keymap("i", "<C-p>", "<ESC>:w|!python3 %<CR>", opts)
+keymap("i", "<C-o>", "<ESC>:w|!poetry run python %<CR>", opts)
 
 
 -- Visual --
@@ -100,6 +102,7 @@ keymap("v", "<C-n>", "$", opts)
 
 -- Run file in python interpreter
 keymap("v", "<C-p>", "<C-[>:w|!python3 %<CR>", opts)
+keymap("v", "<C-o>", "<C-[>:w|!poetry run python %<CR>", opts)
 
 -- Visual Block --
 -- Move text up and down
