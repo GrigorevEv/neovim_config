@@ -44,6 +44,10 @@ keymap("n", "co", ":set colorcolumn=79<CR>", opts)
 -- Mirror deploy
 keymap("n", "0", ":w|MirrorPush en0<CR>", opts)
 keymap("n", "1", ":w|MirrorPush en1<CR>", opts)
+keymap("n", "2", ":w|MirrorPush en2<CR>", opts)
+keymap("n", "3", ":w|MirrorPush en3<CR>", opts)
+keymap("n", "5", ":w|MirrorPush bu<CR>", opts)
+keymap("n", "9", ":w|MirrorPush ob<CR>", opts)
 
 -- Move to start and end of line
 keymap("n", "<C-a>", "^", opts)
@@ -55,7 +59,7 @@ keymap("n", "<C-o>", "<C-i>", opts)
 
 -- Run file in python interpreter
 keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
-keymap("n", "<C-o>", ":w|!poetry run python %<CR>", opts)
+-- keymap("n", "<C-o>", ":w|!poetry run python %<CR>", opts)
 
 -- Open learning python files
 keymap("n", "<Leader>o", ":e ~/code/personal/sandbox/sb1.py<CR>", opts)

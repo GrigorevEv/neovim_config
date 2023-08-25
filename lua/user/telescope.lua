@@ -11,7 +11,7 @@ telescope.setup {
     prompt_prefix = "🔍 ",
     selection_caret = " ",
     path_display = { "smart" },
-    file_ignore_patterns = {"react.js"},
+    file_ignore_patterns = {"react.js", "venv", "python3.7"},
 
     mappings = {
       i = {

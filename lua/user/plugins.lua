@@ -101,6 +101,9 @@ return packer.startup(function(use)
     -- Tagbar
     use({ "preservim/tagbar", commit = "83933d557409639df53fd2ca21484279b5854c1e" })
 
+    -- Colorizer
+    use({ "norcalli/nvim-colorizer.lua" })
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
