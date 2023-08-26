@@ -73,8 +73,7 @@ return packer.startup(function(use)
     use({ "L3MON4D3/LuaSnip", commit = "79b2019c68a2ff5ae4d732d50746c901dd45603a" }) --snippet engine
 
     -- LSP
-    use({ "neovim/nvim-lspconfig", commit = "4bb0f1845c5cc6465aecedc773fc2d619fcd8faf" }) -- enable LSP
-    -- use({ "williamboman/nvim-lsp-installer", commit = "ae913cb4fd62d7a84fb1582e11f2e15b4d597123" }) -- simple to use language server installer
+    use({ "neovim/nvim-lspconfig" }) -- enable LSP
     use({ "jose-elias-alvarez/null-ls.nvim" }) -- for formatters and linters
 
     -- Telescope
