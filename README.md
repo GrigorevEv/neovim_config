@@ -23,5 +23,5 @@ rm -rf neovim
 ```
 git clone https://github.com/GrigorevEv/neovim_config ~/.config/nvim
 sudo apt install ninja-build gettext cmake unzip curl xsel ripgrep
-pip3 install pynvim ruff pyright
+pip3 install pynvim ruff ruff-lsp pyright
 ```
