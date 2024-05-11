@@ -1,0 +1,6 @@
+{
+    "node1": "root@192.168.5.234:/home/admin/vair/",
+    "node2": "root@192.168.5.235:/home/admin/vair/",
+    "node3": "root@192.168.5.236:/home/admin/vair/",
+    "local_dir": "/home/eugene/code/work/vair-aist-kvm/"
+}

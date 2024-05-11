@@ -42,12 +42,10 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", "co", ":set colorcolumn=79<CR>", opts)
 
 -- Mirror deploy
-keymap("n", "0", ":w|MirrorPush en0<CR>", opts)
-keymap("n", "1", ":w|MirrorPush en1<CR>", opts)
-keymap("n", "2", ":w|MirrorPush en2<CR>", opts)
-keymap("n", "3", ":w|MirrorPush en3<CR>", opts)
-keymap("n", "5", ":w|MirrorPush bu<CR>", opts)
-keymap("n", "9", ":w|MirrorPush ob<CR>", opts)
+keymap("n", "1", ":w|MirrorPush en0<CR>", opts)
+keymap("n", "2", ":w|MirrorPush en1<CR>", opts)
+keymap("n", "3", ":w|MirrorPush en2<CR>", opts)
+keymap("n", "4", ":w|MirrorPush en3<CR>", opts)
 
 -- Move to start and end of line
 keymap("n", "<C-a>", "^", opts)
@@ -58,7 +56,8 @@ keymap("n", "<C-i>", "<C-o>", opts)
 keymap("n", "<C-o>", "<C-i>", opts)
 
 -- Run file in python interpreter
-keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
+keymap("n", "<C-p>", ":w|!f %<CR>", opts)
+-- keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
 -- keymap("n", "<C-o>", ":w|!poetry run python %<CR>", opts)
 
 -- Open learning python files
@@ -83,8 +82,9 @@ keymap("i", "<C-n>", "<ESC>A", opts)
 
 
 -- Run file in python interpreter
-keymap("i", "<C-p>", "<ESC>:w|!python3 %<CR>", opts)
-keymap("i", "<C-o>", "<ESC>:w|!poetry run python %<CR>", opts)
+keymap("i", "<C-p>", "<ESC>:w|!f %<CR>", opts)
+-- keymap("i", "<C-p>", "<ESC>:w|!python3 %<CR>", opts)
+-- keymap("i", "<C-o>", "<ESC>:w|!poetry run python %<CR>", opts)
 
 
 -- Visual --
