@@ -19,6 +19,10 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 -- Normal --
+-- Remove column numbers and sign column 
+-- keymap("n", "<C-x>", ":setlocal signcolumn=no nonumber cc=<CR>", opts)
+-- keymap("n", "<C-s>", ":setlocal signcolumn=yes number cc=79<CR>", opts)
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
@@ -66,6 +70,10 @@ keymap("n", "<Leader>O", ":e ~/code/personal/sandbox/sb2.py<CR>", opts)
 
 
 -- Insert --
+-- Remove column numbers and sign column 
+-- keymap("i", "<C-x>", ":setlocal signcolumn=no nonumber<CR>", opts)
+-- keymap("i", "<C-X>", ":setlocal signcolumn=yes number<CR>", opts)
+
 -- Press kj or jk fast to exit insert mode 
 keymap("i", "kj", "<ESC>", opts)
 keymap("i", "jk", "<ESC>", opts)
@@ -81,6 +89,7 @@ keymap("i", "<C-a>", "<ESC>I", opts)
 keymap("i", "<C-n>", "<ESC>A", opts)
 
 
+
 -- Run file in python interpreter
 keymap("i", "<C-p>", "<ESC>:w|!f %<CR>", opts)
 -- keymap("i", "<C-p>", "<ESC>:w|!python3 %<CR>", opts)
@@ -88,6 +97,9 @@ keymap("i", "<C-p>", "<ESC>:w|!f %<CR>", opts)
 
 
 -- Visual --
+-- Remove column numbers and sign column 
+-- keymap("v", "<C-x>", ":setlocal signcolumn=no nonumber norelativenumber<CR>", opts)
+
 -- Stay in indent mode
 keymap("v", "H", "<gv", opts)
 keymap("v", "L", ">gv", opts)
