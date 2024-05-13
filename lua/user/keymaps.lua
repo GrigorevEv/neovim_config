@@ -42,12 +42,10 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 keymap("n", "co", ":set colorcolumn=79<CR>", opts)
 
 -- Mirror deploy
-keymap("n", "0", ":w|MirrorPush en0<CR>", opts)
-keymap("n", "1", ":w|MirrorPush en1<CR>", opts)
-keymap("n", "2", ":w|MirrorPush en2<CR>", opts)
-keymap("n", "3", ":w|MirrorPush en3<CR>", opts)
-keymap("n", "5", ":w|MirrorPush bu<CR>", opts)
-keymap("n", "9", ":w|MirrorPush ob<CR>", opts)
+keymap("n", "1", ":w|MirrorPush en0<CR>", opts)
+keymap("n", "2", ":w|MirrorPush en1<CR>", opts)
+keymap("n", "3", ":w|MirrorPush en2<CR>", opts)
+keymap("n", "4", ":w|MirrorPush en3<CR>", opts)
 
 -- Move to start and end of line
 keymap("n", "<C-a>", "^", opts)
@@ -65,6 +63,8 @@ keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
 keymap("n", "<Leader>o", ":e ~/code/personal/sandbox/sb1.py<CR>", opts)
 keymap("n", "<Leader>O", ":e ~/code/personal/sandbox/sb2.py<CR>", opts)
 
+-- Restart nvim config
+keymap("n", "<C-x>", ":so $NVIM_CONFIG<CR>", opts)
 
 -- Insert --
 -- Press kj or jk fast to exit insert mode 
