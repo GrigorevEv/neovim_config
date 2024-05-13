@@ -5,7 +5,7 @@ import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
-with open('/home/eugene/nvim/python/rsync_deploy/rs_conf.json') as f:
+with open('/home/eugene/nvim/python/rsync_deploy/rs_engine_conf.json') as f:
     sync_data = json.load(f)
 
 EN0_CMD = f'rsync -a --delete {sync_data["local_dir"]} {sync_data["en0"]}'
