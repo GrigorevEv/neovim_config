@@ -1,6 +1,6 @@
 local lspconfig = require("lspconfig")
 
-local servers = { "ruff_lsp", "pyright", "ccls" }
+local servers = { "ruff_lsp", "pyright", "clangd" }
 
 
 for _, server in pairs(servers) do

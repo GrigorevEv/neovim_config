@@ -56,7 +56,8 @@ return packer.startup(function(use)
 
     -- Not fresh all below
     use({ "kyazdani42/nvim-tree.lua", commit = "bdb6d4a25410da35bbf7ce0dbdaa8d60432bc243" })
-    use({ "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" })
+    -- use({ "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" })
+    use({ "akinsho/bufferline.nvim" })
 
     -- Colorschemes
     use({ "lunarvim/darkplus.nvim", commit = "f20cba5d690bc34398a3a8372ee7bbbc7b6609fa" })
@@ -93,7 +94,8 @@ return packer.startup(function(use)
     use({ "karb94/neoscroll.nvim", commit = "54c5c419f6ee2b35557b3a6a7d631724234ba97a" })
 
     -- Colorcolumn
-    use({ "lukas-reineke/virt-column.nvim", commit = "29db24c5e94243df1f34f47bbcb4e7803204cae4" })
+    -- use({ "lukas-reineke/virt-column.nvim", commit = "29db24c5e94243df1f34f47bbcb4e7803204cae4" })
+    use({ "lukas-reineke/virt-column.nvim" })
 
     -- Python indentation
     use({ "Vimjas/vim-python-pep8-indent", commit = "60ba5e11a61618c0344e2db190210145083c91f8" })
