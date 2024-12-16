@@ -13,6 +13,14 @@ telescope.setup {
     path_display = { "smart" },
     file_ignore_patterns = {"react.js", "venv", "python3.7"},
     layout_strategy = 'vertical',
+    layout_config = {
+        height = 0.99,
+        width = 0.99,
+        mirror = true,
+        scroll_speed = 1,
+        prompt_position = 'top',
+        preview_height = 0.6,
+    },
 
     mappings = {
       i = {
@@ -23,6 +31,7 @@ telescope.setup {
         ["<C-k>"] = actions.move_selection_previous,
 
         ["<C-c>"] = actions.close,
+        ["<esc>"] = actions.close,
 
         ["<Down>"] = actions.move_selection_next,
         ["<Up>"] = actions.move_selection_previous,
@@ -38,10 +47,9 @@ telescope.setup {
         ["<PageUp>"] = actions.results_scrolling_up,
         ["<PageDown>"] = actions.results_scrolling_down,
 
-        ["<Tab>"] = actions.toggle_selection + actions.move_selection_worse,
+        ["<Tab>"] = actions.toggle_selection,
         ["<S-Tab>"] = actions.toggle_selection + actions.move_selection_better,
-        ["<C-q>"] = actions.send_to_qflist + actions.open_qflist,
-        ["<M-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+        ["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
         ["<C-l>"] = actions.complete_tag,
         ["<C-_>"] = actions.which_key, -- keys from pressing <C-/>
       },
