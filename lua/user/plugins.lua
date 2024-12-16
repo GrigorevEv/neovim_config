@@ -39,7 +39,7 @@ packer.init({
 })
 
 return packer.startup(function(use)
-    use({ "wbthomason/packer.nvim", commit = "1d0cf98a561f7fd654c970c49f917d74fafe1530" })
+    use({ "wbthomason/packer.nvim" })
     use({ "nvim-lua/plenary.nvim", commit = "253d34830709d690f013daf2853a9d21ad7accab" })
     use({ "windwp/nvim-autopairs", commit = "e755f366721bc9e189ddecd39554559045ac0a18" })
     use({ "terrortylor/nvim-comment", commit = "e9ac16ab056695cad6461173693069ec070d2b23"})
@@ -56,7 +56,6 @@ return packer.startup(function(use)
 
     -- Not fresh all below
     use({ "kyazdani42/nvim-tree.lua", commit = "bdb6d4a25410da35bbf7ce0dbdaa8d60432bc243" })
-    -- use({ "akinsho/bufferline.nvim", commit = "c78b3ecf9539a719828bca82fc7ddb9b3ba0c353" })
     use({ "akinsho/bufferline.nvim" })
 
     -- Colorschemes
@@ -83,6 +82,7 @@ return packer.startup(function(use)
 
     -- Treesitter
     use({ "nvim-treesitter/nvim-treesitter", run = ':TSUpdate'})
+    -- use({ "nvim-treesitter/nvim-treesitter" })
 
     -- Git
     use({ "lewis6991/gitsigns.nvim" })
@@ -101,7 +101,7 @@ return packer.startup(function(use)
     use({ "Vimjas/vim-python-pep8-indent", commit = "60ba5e11a61618c0344e2db190210145083c91f8" })
 
     -- Tagbar
-    use({ "preservim/tagbar", commit = "83933d557409639df53fd2ca21484279b5854c1e" })
+    use({ "preservim/tagbar" })
 
     -- Colorizer
     use({ "norcalli/nvim-colorizer.lua" })

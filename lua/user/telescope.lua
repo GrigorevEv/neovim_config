@@ -12,6 +12,7 @@ telescope.setup {
     selection_caret = " ",
     path_display = { "smart" },
     file_ignore_patterns = {"react.js", "venv", "python3.7"},
+    layout_strategy = 'vertical',
 
     mappings = {
       i = {

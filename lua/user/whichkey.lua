@@ -93,6 +93,7 @@ local mappings = {
   f = {
     name = "Find",
     a = { "<cmd>lua require'telescope.builtin'.lsp_references{}<cr>", "Find references" },
+    l = { "<cmd>Telescope grep_string<cr>", "Grep String" },
     f = { "<cmd>Telescope find_files<cr>", "Find files" },
     g = { "<cmd>Telescope live_grep<cr>", "Find Text" },
     c = { "<cmd>Telescope colorscheme<cr>", "Colorscheme" },
