@@ -88,6 +88,9 @@ telescope.setup {
     },
   },
   pickers = {
+        grep_string = {
+            sorter = get_generic_fuzzy_sorter,
+        },
   },
   extensions = {
     fzf = {
@@ -98,3 +101,4 @@ telescope.setup {
     }
   },
 }
+telescope.load_extension('fzf')
