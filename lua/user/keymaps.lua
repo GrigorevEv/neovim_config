@@ -60,7 +60,7 @@ keymap("n", "<C-i>", "<C-o>", opts)
 keymap("n", "<C-o>", "<C-i>", opts)
 
 -- Run file in python interpreter
-keymap("n", "<C-p>", ":w|!f %<CR>", opts)
+keymap("n", "<C-p>", ":execute 'Telescope egrepify default_text=' . expand('<cword>')<CR>", opts)
 -- keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
 -- keymap("n", "<C-o>", ":w|!poetry run python %<CR>", opts)
 

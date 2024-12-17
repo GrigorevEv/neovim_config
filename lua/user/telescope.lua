@@ -8,9 +8,9 @@ local actions = require "telescope.actions"
 telescope.setup {
   defaults = {
 
-    prompt_prefix = "🔍 ",
+    -- prompt_prefix = "🔍 ",
     selection_caret = " ",
-    path_display = { "smart" },
+    -- path_display = { "smart" },
     file_ignore_patterns = {"react.js", "venv", "python3.7"},
     layout_strategy = 'vertical',
     layout_config = {
@@ -19,7 +19,7 @@ telescope.setup {
         mirror = true,
         scroll_speed = 1,
         prompt_position = 'top',
-        preview_height = 0.6,
+        preview_height = 0.4,
     },
 
     mappings = {
