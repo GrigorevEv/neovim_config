@@ -60,9 +60,6 @@ keymap("n", "<C-o>", "<C-i>", opts)
 -- Find word
 keymap("n", "<C-p>", ":execute 'Telescope egrepify default_text=' . expand('<cword>')<CR>", opts)
 
--- Restart nvim config
-keymap("n", "<C-x>", ":so%<CR>", opts)
-
 -- Insert --
 -- Remove column numbers and sign column 
 -- keymap("i", "<C-x>", ":setlocal signcolumn=no nonumber<CR>", opts)
