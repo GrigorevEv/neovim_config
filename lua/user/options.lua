@@ -34,11 +34,10 @@ local options = {
   scrolloff = 10,                          -- is one of my fav
   sidescrolloff = 10,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  colorcolumn = "79",
 }
 
-vim.cmd('set colorcolumn=79')
 vim.cmd('noremap <LeftRelease> "+y<LeftRelease>')
-
 vim.opt.shortmess:append "c"
 
 for k, v in pairs(options) do

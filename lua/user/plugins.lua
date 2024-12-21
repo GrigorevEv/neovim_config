@@ -95,10 +95,6 @@ return packer.startup(function(use)
     -- Smooth scrolling
     use({ "karb94/neoscroll.nvim", commit = "54c5c419f6ee2b35557b3a6a7d631724234ba97a" })
 
-    -- Colorcolumn
-    -- use({ "lukas-reineke/virt-column.nvim", commit = "29db24c5e94243df1f34f47bbcb4e7803204cae4" })
-    use({ "lukas-reineke/virt-column.nvim" })
-
     -- Python indentation
     use({ "Vimjas/vim-python-pep8-indent", commit = "60ba5e11a61618c0344e2db190210145083c91f8" })
 
