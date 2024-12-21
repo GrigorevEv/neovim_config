@@ -1,9 +1,6 @@
 vim.cmd [[
 try
-  " colorscheme gruvbox-baby
-  " colorscheme horizon
-  " colorscheme darkplus
-  colorscheme onedarker
+  colorscheme onedark
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark

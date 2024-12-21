@@ -43,8 +43,6 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
-keymap("n", "co", ":set colorcolumn=79<CR>", opts)
-
 -- Mirror deploy
 keymap("n", "1", ":w|MirrorPush en0<CR>", opts)
 keymap("n", "2", ":w|MirrorPush en1<CR>", opts)
@@ -59,17 +57,11 @@ keymap("n", "<C-n>", "$", opts)
 keymap("n", "<C-i>", "<C-o>", opts)
 keymap("n", "<C-o>", "<C-i>", opts)
 
--- Run file in python interpreter
+-- Find word
 keymap("n", "<C-p>", ":execute 'Telescope egrepify default_text=' . expand('<cword>')<CR>", opts)
--- keymap("n", "<C-p>", ":w|!python3 %<CR>", opts)
--- keymap("n", "<C-o>", ":w|!poetry run python %<CR>", opts)
-
--- Open learning python files
-keymap("n", "<Leader>o", ":e ~/code/personal/sandbox/sb1.py<CR>", opts)
-keymap("n", "<Leader>O", ":e ~/code/personal/sandbox/sb2.py<CR>", opts)
 
 -- Restart nvim config
-keymap("n", "<C-x>", ":so $NVIM_CONFIG<CR>", opts)
+keymap("n", "<C-x>", ":so%<CR>", opts)
 
 -- Insert --
 -- Remove column numbers and sign column 

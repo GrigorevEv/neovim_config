@@ -59,10 +59,7 @@ return packer.startup(function(use)
     use({ "akinsho/bufferline.nvim" })
 
     -- Colorschemes
-    use({ "lunarvim/darkplus.nvim", commit = "f20cba5d690bc34398a3a8372ee7bbbc7b6609fa" })
-    use({ "luisiacc/gruvbox-baby", commit = "4f1df4ed179705179ebb4e57b6ac4dedc4130d7e" })
-    use({ "lunarvim/Onedarker.nvim", commit = "b4f92f073ed7cdf0358ad005cee0484411232b1b"})
-    use({ "LunarVim/horizon.nvim", commit = "314ac68479d9d25a6486e51f2a1420d2e660405c"})
+    use({ "navarasu/onedark.nvim" })
 
     -- cmp plugins
     use({ "hrsh7th/nvim-cmp", commit = "feed47fd1da7a1bad2c7dca456ea19c8a5a9823a" }) -- The completion plugin
