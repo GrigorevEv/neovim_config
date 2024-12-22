@@ -39,17 +39,17 @@ packer.init({
 })
 
 return packer.startup(function(use)
+
     use({ "wbthomason/packer.nvim" })
     use({ "nvim-lua/plenary.nvim", commit = "253d34830709d690f013daf2853a9d21ad7accab" })
     use({ "windwp/nvim-autopairs", commit = "e755f366721bc9e189ddecd39554559045ac0a18" })
     use({ "terrortylor/nvim-comment", commit = "e9ac16ab056695cad6461173693069ec070d2b23"})
-    use({ "kyazdani42/nvim-web-devicons", commit = "b8d0c99578dcb9d084a45ca4b3a4a502712c2741" })
     use({ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" })
     use({ "nvim-lualine/lualine.nvim", commit = "e99d733e0213ceb8f548ae6551b04ae32e590c80" })
     -- use({ "akinsho/toggleterm.nvim", commit = "c8e982ad2739eeb0b13d0fecb14820c9bf5e3da0" })
     use({ "akinsho/toggleterm.nvim", commit = "066cccf48a43553a80a210eb3be89a15d789d6e6" })
     use({ "ahmedkhalf/project.nvim", commit = "1c2e9c93c7c85126c2197f5e770054f53b1926fb" })
-    use({ "lewis6991/impatient.nvim", commit = "d3dd30ff0b811756e735eb9020609fa315bfbbcc" })
+    use({ "lewis6991/impatient.nvim" })
     use({ "lukas-reineke/indent-blankline.nvim", commit = "08c9b75193f8aac54eb51e8fa1f4b02cb7dd2424" })
     use({ "goolord/alpha-nvim", commit = "4e1c4dedf5983e84b3ed305228b2235c56c7023c" })
     use({ "folke/which-key.nvim", commit = "fb027738340502b556c3f43051f113bcaa7e8e63" })
@@ -86,6 +86,7 @@ return packer.startup(function(use)
     -- Git
     use({ "tpope/vim-fugitive" })
     use({ "lewis6991/gitsigns.nvim" })
+    use({ "sindrets/diffview.nvim" })
 
     -- Mirror
     use({ "zenbro/mirror.vim", commit = "fe732ee567fcd2b25191a80b7ac2a880a74ff5c6" })
@@ -101,6 +102,12 @@ return packer.startup(function(use)
 
     -- Colorizer
     use({ "norcalli/nvim-colorizer.lua" })
+
+    --Devicons
+    use({ "nvim-tree/nvim-web-devicons" })
+    
+    --Dressing
+    use({ "stevearc/dressing.nvim" })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
