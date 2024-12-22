@@ -117,11 +117,12 @@ local mappings = {
 
   g = {
     name = "Git",
-    g = { "<cmd>lua _LAZYGIT_TOGGLE()<CR>", "Lazygit" },
+    g = { "<cmd>G<CR>", "Fugitive" },
     j = { "<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk" },
     k = { "<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk" },
     l = { "<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame" },
-    a = { "<cmd>lua require 'gitsigns'.toggle_current_line_blame()<cr>", "Blame" },
+    -- a = { "<cmd>lua require 'gitsigns'.toggle_current_line_blame()<cr>", "Blame" },
+    a = { "<cmd>LazyGit<cr>", "Blame" },
     p = { "<cmd>lua require 'gitsigns'.preview_hunk_inline()<cr>", "Preview Hunk" },
     r = { "<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk" },
     R = { "<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer" },

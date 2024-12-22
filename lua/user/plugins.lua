@@ -87,6 +87,7 @@ return packer.startup(function(use)
     use({ "tpope/vim-fugitive" })
     use({ "lewis6991/gitsigns.nvim" })
     use({ "sindrets/diffview.nvim" })
+    use({ "kdheepak/lazygit.nvim" })
 
     -- Mirror
     use({ "zenbro/mirror.vim", commit = "fe732ee567fcd2b25191a80b7ac2a880a74ff5c6" })
