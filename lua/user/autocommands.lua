@@ -32,11 +32,10 @@ vim.cmd [[
   augroup _fugitive
     autocmd!
     autocmd User FugitiveChanged NvimTreeRefresh
+ 
+  augroup _lazygit
+    autocmd!
+    autocmd FocusGained * NvimTreeRefresh
   augroup end
+ augroup end
 ]]
-
--- Autoformat
--- augroup _lsp
---   autocmd!
---   autocmd BufWritePre * lua vim.lsp.buf.formatting()
--- augroup end
