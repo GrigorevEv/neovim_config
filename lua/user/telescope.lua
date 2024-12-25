@@ -19,7 +19,7 @@ telescope.setup {
         mirror = true,
         scroll_speed = 1,
         prompt_position = 'top',
-        preview_height = 0.7,
+        preview_height = 0.5,
     },
 
     mappings = {
